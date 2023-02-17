@@ -1,6 +1,7 @@
 {
   "name": "titan",
   "version": "1.0.0",
+  "type": "module",
   "description": "zero-dependency vanilla js web components following ProductPlan's atlas design system.",
   "main": "index.js",
   "scripts": {

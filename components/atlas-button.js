@@ -10,7 +10,7 @@ export default class AtlasButton extends HTMLElement {
 
     shadowRoot.innerHTML = `
       <style>
-         .AtlasButton {border: none;padding: 8px 16px;border-radius: 4px;font-size: 14px;line-height: 20px;background-color: #0A6CB9;color: #fff;cursor: pointer;text-decoration: none;}
+         .AtlasButton {border: none;padding: 8px 16px;border-radius: 4px;font-size: 14px;line-height: 20px;background-color: #0A6CB9;color: #fff;cursor: pointer;text-decoration: none; display: inline-block;}
          .AtlasButton.AtlasButton--small {padding: 4px 12px;}
          .AtlasButton.AtlasButton--xsmall {padding: 4px 8px;font-size: 12px;line-height: 18px;}
          .AtlasButton:hover:hover:not(:disabled) {background-color: #0757AA;}
