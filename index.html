@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Atlas - a zero dependency vanilla js ui library</title>
+  <script type="module" src="index.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <main>
+    <h1>Atlas</h1>
+    <article>
+      <h2><code>&#60;atlas-button&#62;</code></h2>
+      <section>
+        <h3>Themes</h3>
+        <atlas-button>Default</atlas-button>
+        <atlas-button theme="secondary">Secondary</atlas-button>
+        <atlas-button theme="teritary">Teritary</atlas-button>
+        <atlas-button theme="ghost">Ghost</atlas-button>
+        <atlas-button theme="destructive">Destructive</atlas-button>
+      </section>
+      <section>
+        <h3>Disabled</h3>
+        <atlas-button disabled>Default</atlas-button>
+        <atlas-button theme="secondary" disabled>Secondary</atlas-button>
+        <atlas-button theme="teritary" disabled>Teritary</atlas-button>
+        <atlas-button theme="ghost" disabled>Ghost</atlas-button>
+        <atlas-button theme="destructive" disabled>Destructive</atlas-button>
+      </section>
+      <section>
+        <h3>Sizes</h3>
+        <atlas-button>Default</atlas-button>
+        <atlas-button size="small">Small</atlas-button>
+        <atlas-button size="xsmall">xSmall</atlas-button>
+      </section>
+      <section>
+        <h3>With Icons</h3>
+        <atlas-button><i slot="leading-icon" class="fa fa-check"></i>Leading Icon</atlas-button>
+        <atlas-button><i slot="trailing-icon" class="fa fa-check"></i>Trailing Icon</atlas-button>
+      </section>
+      <section>
+        <h3>Link Buttons</h3>
+        <atlas-button href="https://w3.org" target="_blank">Click here!</atlas-button>
+      </section>
+    </article>
+    <article>
+      <h2><code>&#60;atlas-input&#62;</code></h2>
+      <section>
+        <h3>With Label</h3>
+        <atlas-input label="How are you?">
+          <i class="fa-solid fa-circle-xmark" slot="clear-icon"></i>
+        </atlas-input>
+      </section>
+      <section>
+        <h3>With Placeholder</h3>
+        <atlas-input label="This has a placeholder" placeholder="placeholder text">
+          <i class="fa-solid fa-circle-xmark" slot="clear-icon"></i>
+        </atlas-input>
+      </section>
+      <section>
+        <h3>With Value</h3>
+        <atlas-input label="Prepopulated Value" defaultvalue="I am a value">
+          <i class="fa-solid fa-circle-xmark" slot="clear-icon"></i>
+        </atlas-input>
+      </section>
+      <section>
+        <h3>Disabled</h3>
+        <atlas-input label="Prepopulated Value" defaultvalue="I am a value" disabled>
+          <i class="fa-solid fa-circle-xmark" slot="clear-icon"></i>
+        </atlas-input>
+        <atlas-input label="This has a placeholder" placeholder="placeholder text" disabled>
+          <i class="fa-solid fa-circle-xmark" slot="clear-icon"></i>
+        </atlas-input>
+      </section>
+    </article>
+    <article>
+      <h2><code>&#60;atlas-menu&#62;</code></h2>
+      <section>
+        <h3>Simple Example</h3>
+        <atlas-menu open>
+          <atlas-menuitem>Option 1</atlas-menuitem>
+          <atlas-menuitem>Option 2</atlas-menuitem>
+          <atlas-menuitem>Option 3</atlas-menuitem>
+        </atlas-menu>
+      </section>
+      <section>
+        <h3>With Seperator</h3>
+        <atlas-menu open>
+          <atlas-menuitem>Option 1</atlas-menuitem>
+          <atlas-menuitem>Option 2</atlas-menuitem>
+          <atlas-menuitem>Option 3</atlas-menuitem>
+          <atlas-menusep></atlas-menusep>
+          <atlas-menuitem>Delete</atlas-menuitem>
+        </atlas-menu>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
